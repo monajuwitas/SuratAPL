@@ -5,7 +5,8 @@ package com.example.monajuwitas.suratapl.Utils;
  */
 
 public interface AppConstants {
-    String BaseUrl = "http://192.168.43.83/apikominfo/suratapl/";
+    String BaseUrl = "http://192.3.0.116/apikominfo/suratapl/";
+//    url api : 36.67.167.44/sumbarapis/spj/auth/signin.   username. password
 
     String SUCCESS = "00";
     String FAILED = "100";

@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -29,6 +30,9 @@ public class HomeAsistenFragment extends Fragment {
     CardView notadinas;
     TextView j1;
     ProgressDialog progress;
+
+    //deklarasi onbackpressed
+    boolean doubleBackToExitPressedOnce = false;
 
     public HomeAsistenFragment() {
         super();
@@ -89,4 +93,23 @@ public class HomeAsistenFragment extends Fragment {
             }
         });
     }
+
+    //    bck keluar aplikasi-----------------------------------------------------------
+//    @Override
+//    public void onBackPressed() {
+//        if (doubleBackToExitPressedOnce) {
+//            return;
+//        }
+//
+//        this.doubleBackToExitPressedOnce = true;
+//        Toast.makeText(getContext(), "Klik sekali lagi untuk keluar", Toast.LENGTH_SHORT).show();
+//
+//        new Handler().postDelayed(new Runnable() {
+//
+//            @Override
+//            public void run() {
+//                doubleBackToExitPressedOnce = false;
+//            }
+//        }, 2000);
+//    }
 }

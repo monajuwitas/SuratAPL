@@ -2,11 +2,13 @@ package com.example.monajuwitas.suratapl.Asisten;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.monajuwitas.suratapl.IOnBackPressed;
 import com.example.monajuwitas.suratapl.R;
 
 public class HomeAsistenActivity extends AppCompatActivity {
@@ -55,4 +57,12 @@ public class HomeAsistenActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.contenthomeasisten, homeAsFragment);
         fragmentTransaction.commit();
     }
+
+//    onbackpressed
+//    @Override public void onBackPressed() {
+//        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.main_container);
+//        if (!(fragment instanceof IOnBackPressed) || !((IOnBackPressed) fragment).onBackPressed()) {
+//            super.onBackPressed();
+//        }
+//    }
 }
